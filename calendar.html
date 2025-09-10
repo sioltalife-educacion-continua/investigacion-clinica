@@ -6,9 +6,10 @@
   <title>Calendario Académico | Sioltalife Educación Continua</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets//favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets//favicon-16x16.png">
-   <link rel="manifest" href="assets//site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets//favicon-16x16.png">
+    <link rel="manifest" href="assets//site.webmanifest">
   <style>
     :root{
       --primary:#2D71B8;
@@ -292,7 +293,7 @@
         </div>
         <div class="detail-row">
           <div class="detail-label">Estado:</div>
-          <div id="modalStatusText">Pendiente</div>
+          <div id="modalStatusText">Entregado</div>
         </div>
         <div class="detail-row">
           <div class="detail-label">Descripción:</div>
@@ -358,7 +359,7 @@
     const MIN_MONTH = {y:2025,m:7};  // agosto
     const MAX_MONTH = {y:2025,m:9};  // octubre
 
-    /* ==== Eventos de ejemplo (reemplaza por los tuyos) ==== */
+    /* ==== Eventos de ejemplo  ==== */
     
 
 const eventos = [
@@ -366,7 +367,7 @@ const eventos = [
   { id: 1, titulo: "Sesión 1 · Módulo 1: Introducción a la Investigación Clínica", fecha: new Date(2025,7,30,10,0), hora: "09:00 - 11:00",
     descripcion: "Fases del desarrollo de un medicamento • ¿Para qué hacemos investigación clínica? • ¿Qué es la investigación clínica? • Historia y evolución de la investigación clínica", enlaceMaterial: "mod-1.html", enlaceZoom: "https://us05web.zoom.us/j/87327551238" },
 
-  { id: 2, titulo: "Sesión 2 · Módulo 2: De la teoría a la práctica: Las fases del desarrollo clínico ", fecha: new Date(2025,8,6,10,0), hora: "09:00 - 11:00",
+  { id: 2, titulo: "Sesión 2 · Módulo 2: Fases de Desarrollo Clínico de un Medicamento ", fecha: new Date(2025,8,6,10,0), hora: "09:00 - 11:00",
     descripcion: "Generalidades y Fases de Desarrollo de un medicamento • Nuevos diseños adaptativos en los ensayos clínicos • Protocolo clínico: documento clave en el desarrollo de un EC • Principios de Buenas Prácticas Clínicas", enlaceMaterial: "mod-2.html", enlaceZoom: "https://us05web.zoom.us/j/87327551238" },
 
   { id: 3, titulo: "Sesión 3 · Módulo 3: Ética en la investigación clínica: un punto de vista práctico", fecha: new Date(2025,8,13,10,0), hora: "09:00 - 11:00",
@@ -384,6 +385,10 @@ const eventos = [
   { id: 6, titulo: "Sesión 6 · Módulo 6: El campo laboral de la investigación clínica", fecha: new Date(2025,9,4,10,0), hora: "09:00 - 11:00",
     descripcion: "¿Por qué investigación clínica? • Los principales actores de la investigación clínica • Roles de entrada en la industria biofarmacéutica • Roles de entrada en una CRO • Competencias y habilidades clave"
 , enlaceMaterial: "mod-6.html", enlaceZoom: "https://us05web.zoom.us/j/87327551238" },
+
+{ id: 7, titulo: "Tarea 1 · Módulo 1: Aplicación de las SPIRIT Guidelines y análisis de evidencia científica", fecha: new Date(2025,8,15,10,0), hora: "23:59",
+    descripcion: "Como parte del Módulo 1-2, deberán realizar una actividad orientada a profundizar en dos aspectos clave: • La aplicación práctica de las SPIRIT Guidelines 2025 en el diseño de protocolos clínicos. • El uso del método científico para analizar la evidencia disponible sobre la vacuna rusa EnteroMix contra cáncer."
+, enlaceMaterial: "https://1drv.ms/b/c/e7d0dde89d5474ab/Eb2ejEoogZBFvRbRq3aftYQBOCRKSDqJRoi62yFdjc_ASg?e=lOqqS3",  },
 
   // Ejemplos de INSTRUCCIONES (antes de entregas o sesiones)
   
