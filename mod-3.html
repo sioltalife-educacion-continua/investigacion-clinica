@@ -125,7 +125,7 @@
             text-align: center;
             padding: 40px 20px;
             margin: 0 auto 40px;
-            max-width: 800px;
+            max-width: 1200px;
         }
         
         .module-page-title {
@@ -157,9 +157,9 @@
         /* Linktree Grid */
         .linktree-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin-bottom: 60px;
+            grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr));
+            gap: 50px;
+            margin-bottom: 100px;
         }
         
         .link-card {
@@ -264,6 +264,162 @@
         .nav-btn i {
             margin-right: 8px;
         }
+
+        
+/* A revisar   */
+        .dropdown-content {
+            display: none;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .sub-link {
+            background-color: #fff;
+            border: 1px solid #2D71B8;
+            border-radius: 6px;
+            padding: 0.75rem;
+            color: #2D71B8;
+            font-weight: 500;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .sub-link:hover {
+            background-color: #2D71B8;
+            color: white;
+        }  
+
+/* Tarjetas con Dropdownlist  */
+       .dropdown-content {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.sub-link {
+  background-color: var(--white);
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+  text-align: center;
+}
+
+.sub-link:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+ /* FOOTER DE ANCHO COMPLETO */
+        .full-width-footer {
+            background: linear-gradient(135deg, var(--dark) 0%, #2d2d2d 100%);
+            color: white;
+            padding: 60px 0 30px;
+            margin-top: auto;
+            width: 100%;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-col h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--accent);
+        }
+        
+        .footer-col p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        .footer-col ul {
+            list-style: none;
+        }
+        
+        .footer-col ul li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-col ul li a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .footer-col ul li a:hover {
+            color: var(--accent);
+            transform: translateX(5px);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background: var(--accent);
+            transform: translateY(-5px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+        }      
+
         
         /* FOOTER - IDÉNTICO AL LANDING PAGE */
         .main-footer {
@@ -431,9 +587,9 @@
                 <h1 class="module-page-title">Módulo 3: Ética en la investigación clínica: un punto de vista práctico.</h1>
                 <p class="module-page-subtitle">Material de consulta y recursos para el módulo</p>
                 
-                <div class="module-description"style="text-align: justify; line-height: 1.6;">
+                <div class="module-description" style="text-align: justify; line-height: 1.6;">
                     
-                    <p>
+                        <p>
                         <strong>Bienvenido(a) al tercer módulo del curso: <em>Ética en la investigación clínica: un punto de vista práctico</em>.</strong>
                         En esta sesión abordaremos los <strong>principios éticos</strong> que dan fundamento a la
                         <strong>investigación en seres humanos</strong>, explorando su <strong>origen histórico</strong> y su
@@ -454,18 +610,59 @@
                         <strong>supervisión</strong> de los <strong>estudios clínicos</strong>, desarrollando
                         <strong>criterios sólidos</strong> para la <strong>toma de decisiones responsables</strong>.
                     </p>
+</div>
+
                 </div>
             </section>
             
             <section class="linktree-section">
                 <div class="linktree-grid">
-                    <!-- Actividad 1 -->
-                    <div class="link-card">
-                        <div class="link-number"></div>
-                        <h3 class="link-title">Actividades del módulo</h3>
-                        <p class="link-desc">Las actividades de este módulo estarán disponibles un par de días antes de la sesión.</p>
-                    </div>
                     
+                    
+                                                     
+                    <!-- Material de Previo a la Clase -->
+                    <div class="link-card">
+                    <div class="link-number"></div>
+                    <div class="link-title">Material para revisar antes de la clase</div>
+                    <div class="link-desc"><p>
+                        En el siguiente enlace encontrarás información que te recomendamos revisar antes de la sesión, durante la sesión se profundizará acerca de los temas de estos documentos.
+                    <p> Para cada documento te recomendamos que <strong>enfoques la revisión </strong>en los siguientes títulos/apartados:</p>
+                    <br>                            
+                    <li>Ley General de Salud: <strong>Título Quinto</strong></li>
+                    <li>Reglamento de la Ley General de Salud en Materia de Investigación para la Salud: <strong>Título Segundo</strong></li>
+                    <li>NOM-012-SSA3-2012: Que establece los criterios para la ejecución de proyectos de investigación para la salud en seres humanos: <strong>Sección: Consentimiento y Aspectos Éticos</strong></li>
+                    <br>
+                </div>
+
+                    <button class="link-btn" onclick="toggleDropdown('actividad3')">
+                        Mostrar Enlaces
+                        <i class="fas fa-link"></i>
+                    </button>
+
+                    <div class="dropdown-content" id="actividad3">
+                        <a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/LGS.pdf" class="sub-link" target="_blank" rel="noopener noreferrer">Ley General de Salud</a>
+                        <a href="https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LGS_MIS.pdf" class="sub-link" target="_blank" rel="noopener noreferrer">Reglamento de la Ley General de Salud en Materia de Investigación para la Salud</a>
+                        <a href="https://www.dof.gob.mx/nota_detalle.php?codigo=5284148&fecha=04/01/2013#gsc.tab=0" class="sub-link" target="_blank" rel="noopener noreferrer">NOM-012-SSA3-2012: Que establece los criterios para la ejecución de proyectos de investigación para la salud en seres humanos.</a>
+                                                
+                </div>             
+                </div>
+
+                
+
+                <!-- Actividad Disclaimer -->
+                    <div class="link-card">
+                        <div class="link-number"> </div>
+                        <h3 class="link-title">Actividades del Módulo y Material de Soporte</h3>
+                        <p class="link-desc">Las actividades del Módulo, el Material de Soporte y las actividades para después de la sesión se encontrarán disponibles un par de horas antes de arrancar la sesión. </p>
+                        
+                    </div>
+            
+                    
+
+                
+</div>
+
+
                     
                 </div>
             </section>
@@ -504,7 +701,7 @@
                 <div class="footer-col">
                     <h3>Recursos</h3>
                     <ul>
-                       <li><a href="calendar.html"><i class="fas fa-chevron-right"></i> Calendario de Sesiones</a></li>
+                        <li><a href="calendar.html"><i class="fas fa-chevron-right"></i> Calendario de Sesiones</a></li>
                         <li><a href="glossary.html"><i class="fas fa-chevron-right"></i> Glosario </a></li>
                         <li><a href="support.html#foro"><i class="fas fa-chevron-right"></i> Foro de Discusión</a></li>
                         <li><a href="support.html#faqs"><i class="fas fa-chevron-right"></i> Preguntas Frecuentes</a></li>
@@ -525,5 +722,16 @@
             </div>
         </div>
     </footer>
+
+<script>
+  function toggleDropdown(id) {
+    const section = document.getElementById(id);
+    const isVisible = section.style.display === 'flex';
+    section.style.display = isVisible ? 'none' : 'flex';
+  }
+</script>
+
+
+
 </body>
 </html>
