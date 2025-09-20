@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Módulo 4  | Regulación en Estudios Clínicos</title>
+    <title>Módulo 4 | Regulación en Estudios Clínicos</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
@@ -125,7 +125,7 @@
             text-align: center;
             padding: 40px 20px;
             margin: 0 auto 40px;
-            max-width: 800px;
+            max-width: 1200px;
         }
         
         .module-page-title {
@@ -157,9 +157,9 @@
         /* Linktree Grid */
         .linktree-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin-bottom: 60px;
+            grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr));
+            gap: 50px;
+            margin-bottom: 100px;
         }
         
         .link-card {
@@ -264,6 +264,162 @@
         .nav-btn i {
             margin-right: 8px;
         }
+
+        
+/* A revisar   */
+        .dropdown-content {
+            display: none;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .sub-link {
+            background-color: #fff;
+            border: 1px solid #2D71B8;
+            border-radius: 6px;
+            padding: 0.75rem;
+            color: #2D71B8;
+            font-weight: 500;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .sub-link:hover {
+            background-color: #2D71B8;
+            color: white;
+        }  
+
+/* Tarjetas con Dropdownlist  */
+       .dropdown-content {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.sub-link {
+  background-color: var(--white);
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+  text-align: center;
+}
+
+.sub-link:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+ /* FOOTER DE ANCHO COMPLETO */
+        .full-width-footer {
+            background: linear-gradient(135deg, var(--dark) 0%, #2d2d2d 100%);
+            color: white;
+            padding: 60px 0 30px;
+            margin-top: auto;
+            width: 100%;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-col h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--accent);
+        }
+        
+        .footer-col p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        .footer-col ul {
+            list-style: none;
+        }
+        
+        .footer-col ul li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-col ul li a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .footer-col ul li a:hover {
+            color: var(--accent);
+            transform: translateX(5px);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background: var(--accent);
+            transform: translateY(-5px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+        }      
+
         
         /* FOOTER - IDÉNTICO AL LANDING PAGE */
         .main-footer {
@@ -433,16 +589,16 @@
                 
                 <div class="module-description" style="text-align: justify; line-height: 1.6;">
                     
-                        <p>
-                            <strong>Bienvenido(a) al cuarto módulo del curso: <em>Regulación en estudios clínicos</em>.</strong>
+                    <p>
+                    <strong>Bienvenido(a) al cuarto módulo del curso: <em>Regulación en estudios clínicos</em>.</strong>
                             En esta sesión exploraremos el <strong>marco regulatorio</strong> que sustenta la
                             <strong>investigación clínica</strong> en diferentes <strong>regiones del mundo</strong>. Abordaremos la
                             <strong>normativa</strong> en <strong>México</strong>, <strong>Estados Unidos</strong> y la
                             <strong>Unión Europea</strong>, analizando sus <strong>características</strong>, <strong>alcances</strong>
                             y <strong>limitaciones</strong>.
-                        </p>
-
-                        <p>
+                </p>
+                <br>
+               <p>
                             Compararemos las <strong>ventajas y desventajas</strong> de cada sistema, lo que te permitirá comprender cómo
                             las <strong>diferencias regulatorias</strong> impactan en el <strong>diseño</strong>, la
                             <strong>ejecución</strong> y la <strong>aprobación</strong> de los <strong>estudios clínicos</strong>.
@@ -451,13 +607,15 @@
                             <strong>ética</strong>, <strong>científica</strong> y <strong>estandarizada</strong> de los
                             <strong>ensayos clínicos</strong> a nivel global.
                         </p>
-
+                        <br>
                         <p>
                             Al concluir este módulo, serás capaz de <strong>identificar</strong>, <strong>analizar</strong> y
                             <strong>correlacionar</strong> los principales <strong>marcos regulatorios nacionales e internacionales</strong>,
                             reconociendo los <strong>documentos clave</strong> y las <strong>funciones</strong> de las
                             <strong>autoridades regulatorias</strong> y <strong>organismos</strong> que intervienen en estos procesos.
                         </p>
+</div>
+
                 </div>
             </section>
             
@@ -465,18 +623,86 @@
                 <div class="linktree-grid">
                     <!-- Actividad 1 -->
                     <div class="link-card">
-                        <div class="link-number"></div>
-                        <h3 class="link-title">Actividades del módulo</h3>
-                        <p class="link-desc">Las actividades de este módulo estarán disponibles un par de días antes de la sesión.</p>
+                        <div class="link-number">1</div>
+                        <h3 class="link-title">Actividad 1 - Lluvia de Ideas - Rompehielos </h3>
+                        <p class="link-desc">¿Con qué animal te identificas?</p>
+                        <a href="https://www.menti.com/alkedftocvwx" target="_blank" rel="noopener noreferrer" class="link-btn">Accede a la lluvia de ideas <i class="fas fa-cloud"></i></a>
                     </div>
                     
+                    <!-- Actividad 2 -->
+                    <div class="link-card">
+                        <div class="link-number">2</div>
+                        <h3 class="link-title">Actividad 2 - La importancia de regular</h3>
+                        <p class="link-desc">Interactúa y escribe una palabra que ejemplifique la importancia de regular.</p>
+                        <a href="https://www.menti.com/alwj6oqt2zvs" target="_blank" rel="noopener noreferrer" class="link-btn">Accede a la lluvia de ideas <i class="fas fa-cloud"></i></a>
+                    </div>
+                    
+                    <!-- Actividad 3 -->
+                    <div class="link-card">
+                        <div class="link-number">3</div>
+                        <h3 class="link-title">Actividad 3 - Participantes en la regulación de la Investigación Clínica </h3>
+                        <p class="link-desc">Interactúa y responde la siguiente pregunta: ¿Quiénes participan en la regulación en investigación clínica?</p>
+                        <a href="https://www.menti.com/alzaswhcwf4n" target="_blank" rel="noopener noreferrer" class="link-btn">Accede a la lluvia de ideas <i class="fas fa-cloud"></i></a>
+                    </div>
+                    
+                    
+                    <!-- Material de Soporte -->
+                    <div class="link-card">
+                        <div class="link-number"></div>
+                        <h3 class="link-title">Material de Soporte </h3>
+                        <p class="link-desc">Accede a un resumen y descripción de Documentos, Leyes, Reglamentos, Normas y Guías referenciados durante el módulo.</p>
+                        <a href="https://1drv.ms/f/c/e7d0dde89d5474ab/EmRKwzFme1pDhx0lqVem0TABRQT7raLRxD91Cwc7XcpqCw?e=TDLJFW" target="_blank" rel="noopener noreferrer" class="link-btn">Accede al material de soporte <i class="fas fa-folder"></i></a>
+                    </div>
+                    
+                   <!-- Actividad Después de sesión -->
+                    <div class="link-card">
+                    <div class="link-number"></div>
+                    <div class="link-title">Tarea Módulo 4 - Del papel a la práctica: análisis de los compromisos regulatorios en investigación clínica </div>
+                    <div class="link-desc">
+                        <p> <strong>Objetivo de la actividad</strong></p>
+                        <p> Que los estudiantes analicen los compromisos regulatorios relacionados con la digitalización en investigación clínica en México, identificando tanto los avances como las áreas pendientes a partir de fuentes oficiales. </p>
+                        <br>
+                        <p> <strong>Instrucciones</strong></p>
+                        <p> <strong>1. Revisión documental</strong>
+                            <li>Lean el documento “Estrategia de Certidumbre Regulatoria para el sector farmacéutico”.</li>
+                            <li>Diríjanse a la sección VI. Medidas en proceso de implementación, inciso d) Digitalización como vía para la optimización, apartado Investigación clínica (página 10).</li>
+                            <li> Identifiquen y enumeren los compromisos descritos en esa sección..</li>
+                            <br>
+                            <p> <strong>2.	Análisis de implementación</strong>
+                            <li> Visiten la página oficial de Cofepris.</li>
+                            <li> Investiguen si los compromisos identificados ya se han implementado y, en su caso, describan el nivel de avance actual.</li>
+                            <li> Comparen la información oficial con lo planteado en el documento.</li>
+                            <br>
+                            <p> <strong>Producto esperado</strong>
+                             <p> Un informe breve (1–1.5 cuartillas) en PDF que incluya:  
+                            <li> Listado de los compromisos identificados.</li>
+                            <li> Análisis del nivel de implementación según Cofepris.</li>
+                            <li> Una reflexión crítica sobre las implicaciones para la investigación clínica en México.</li>
+                            <br>
+                            <br>
+                            <p> <strong>Indicaciones de entrega</strong>
+                            <li> Extensión: 1–1.5 cuartillas, letra Times New Roman 12, interlineado 1.5.</li>
+                            <li> Formato: PDF.</li>
+                            <li> Enviar por correo el informe a jchiquete@sioltalife.com</li>
+                            <br>
+
+                      <a href="https://1drv.ms/f/c/e7d0dde89d5474ab/EmRKwzFme1pDhx0lqVem0TABRQT7raLRxD91Cwc7XcpqCw?e=TDLJFW" target="_blank" rel="noopener noreferrer" class="link-btn">Accede la rúbrica de la actividad y al material de consulta <i class="fas fa-file"></i></a> 
+                </div>
+                    
+                    
+                    
+
+                
+</div>
+
+
                     
                 </div>
             </section>
             
             <!-- Navegación entre módulos -->
             <div class="module-nav">
-                <a href="mod-3.html" class="nav-btn"><i class="fas fa-arrow-left"></i> Módulo Anterior</a>
+                <a href="mod-3.html" class="nav-btn"><i class="fas fa-home"></i> Inicio</a>
                 <a href="mod-5.html" class="nav-btn">Siguiente Módulo <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
@@ -508,7 +734,7 @@
                 <div class="footer-col">
                     <h3>Recursos</h3>
                     <ul>
-                       <li><a href="calendar.html"><i class="fas fa-chevron-right"></i> Calendario de Sesiones</a></li>
+                        <li><a href="calendar.html"><i class="fas fa-chevron-right"></i> Calendario de Sesiones</a></li>
                         <li><a href="glossary.html"><i class="fas fa-chevron-right"></i> Glosario </a></li>
                         <li><a href="support.html#foro"><i class="fas fa-chevron-right"></i> Foro de Discusión</a></li>
                         <li><a href="support.html#faqs"><i class="fas fa-chevron-right"></i> Preguntas Frecuentes</a></li>
@@ -529,5 +755,16 @@
             </div>
         </div>
     </footer>
+
+<script>
+  function toggleDropdown(id) {
+    const section = document.getElementById(id);
+    const isVisible = section.style.display === 'flex';
+    section.style.display = isVisible ? 'none' : 'flex';
+  }
+</script>
+
+
+
 </body>
 </html>
