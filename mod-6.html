@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -125,7 +126,7 @@
             text-align: center;
             padding: 40px 20px;
             margin: 0 auto 40px;
-            max-width: 800px;
+            max-width: 1200px;
         }
         
         .module-page-title {
@@ -157,9 +158,9 @@
         /* Linktree Grid */
         .linktree-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin-bottom: 60px;
+            grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr));
+            gap: 50px;
+            margin-bottom: 100px;
         }
         
         .link-card {
@@ -264,6 +265,162 @@
         .nav-btn i {
             margin-right: 8px;
         }
+
+        
+/* A revisar   */
+        .dropdown-content {
+            display: none;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .sub-link {
+            background-color: #fff;
+            border: 1px solid #2D71B8;
+            border-radius: 6px;
+            padding: 0.75rem;
+            color: #2D71B8;
+            font-weight: 500;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .sub-link:hover {
+            background-color: #2D71B8;
+            color: white;
+        }  
+
+/* Tarjetas con Dropdownlist  */
+       .dropdown-content {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.sub-link {
+  background-color: var(--white);
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+  text-align: center;
+}
+
+.sub-link:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+ /* FOOTER DE ANCHO COMPLETO */
+        .full-width-footer {
+            background: linear-gradient(135deg, var(--dark) 0%, #2d2d2d 100%);
+            color: white;
+            padding: 60px 0 30px;
+            margin-top: auto;
+            width: 100%;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-col h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--accent);
+        }
+        
+        .footer-col p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        .footer-col ul {
+            list-style: none;
+        }
+        
+        .footer-col ul li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-col ul li a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .footer-col ul li a:hover {
+            color: var(--accent);
+            transform: translateX(5px);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background: var(--accent);
+            transform: translateY(-5px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+        }      
+
         
         /* FOOTER - IDÉNTICO AL LANDING PAGE */
         .main-footer {
@@ -428,16 +585,18 @@
     <main class="main-content">
         <div class="container">
             <section class="module-hero">
-                <h1 class="module-page-title">Módulo 6: El campo laboral de la investigación clínica</h1>
+                <h1 class="module-page-title">Módulo 6: El campo laboral de la investigación clínica.</h1>
                 <p class="module-page-subtitle">Material de consulta y recursos para el módulo</p>
                 
-                <div class="module-description"  style="text-align: justify;">
-                    <p>
-    <strong>Bienvenido(a) al sexto y último módulo del curso: <em>El campo laboral de la investigación clínica</em>.</strong>
+                <div class="module-description" style="text-align: justify; line-height: 1.6;">
+                    
+              <p>
+                          <strong>Bienvenido(a) al sexto y último módulo del curso: <em>El campo laboral de la investigación clínica</em>.</strong>
     En esta sesión exploraremos el panorama profesional de la investigación clínica, con un enfoque práctico en los
     <strong>actores</strong> que intervienen en la operación de los estudios y en los <strong>puestos laborales de entrada</strong>
     a los que se puede acceder al iniciar una carrera en este campo.
   </p>
+  <br>
 
   <p>
     Analizaremos cómo se estructuran los equipos en <strong>patrocinadores</strong> y <strong>CROs</strong>, y cómo se articulan sus
@@ -445,25 +604,91 @@
     <strong>roles de entrada</strong> dentro de <strong>Operaciones Clínicas (ClinOps)</strong>, comprendiendo sus responsabilidades
     y la importancia de cada uno en la cadena de valor.
   </p>
-
+<br>
   <p>
     Asimismo, revisaremos las <strong>competencias y habilidades clave</strong> que buscan las empresas en candidatos sin experiencia
     previa, lo que te permitirá realizar una autoevaluación de tu preparación frente a las oportunidades reales del mercado.
     Finalmente, discutiremos el <strong>panorama laboral en México</strong>, brindándote herramientas para evaluar cómo alinear tus
     expectativas profesionales con las necesidades de la industria.
   </p>
+</div>
+
                 </div>
             </section>
             
             <section class="linktree-section">
                 <div class="linktree-grid">
-                    <!-- Actividad 1 -->
+                                    
+                <!-- Actividad complementaria -->
                     <div class="link-card">
-                       <div class="link-number"></div>
-                        <h3 class="link-title">Actividades del módulo</h3>
-                        <p class="link-desc">Las actividades de este módulo estarán disponibles un par de días antes de la sesión.</p>
-                    </div>
+                    <div class="link-number"></div>
+                    <div class="link-title">Actividad Complementaria</div>
+                    <div class="link-desc"><p>Identificación y Preparación para un Rol en Investigación Clínica </p>
+                        <br>
+                    <p><strong>Instrucciones:</strong></p>
+                    <br>
+                    <p><strong>1. Elección del rol</strong></p>
+                    <li>Piensa: ¿En qué rol me visualizo aplicando dentro de 6 meses?</li>
+                    <li>Revisa los documentos y registros proporcionados.</li>
+                    <li>Elige un puesto de los vistos en clase (ejemplo: CTA, IHCRA, Data Assistant, Start-Up Associate, CRC, Reg Affairs Assistant, Safety Associate, QA Assistant, roles emergentes), el que más se adecue a tu perfil, intereses y gustos.</li>
+                    <li>Reflexiona con frases tipo:</li>
+                    <p><i>“Me gusta el monitoreo pero no quiero viajar mucho” → IHCRA</i> </li></p>
+                    <p><i>“Me encanta viajar, conocer personas y trabajar en sitio” → CRA</i> </li></p>
+                    <p><i>“Me gustan los datos y la organización, pero no quiero interacción directa con pacientes” → Data Assistant</i> </li></p>
+                    <br>
+                    <p><strong>Recomendación:</strong>Revisa los blogs de <a href="https://careers.iconplc.com/posts" target="_blank">ICON</a> plc y otras fuentes confiables, tienen descripciones de puestos muy detalladas que te ayudarán a decidir.</p>
+                    <br>
+                    <p><strong>2.Guardar una vacante real</strong></p>
+                    <li>Busca y guarda una vacante actual que corresponda al rol que elegiste. Esta vacante se compartirá junto con tu introspección y aplicación.</li>
+                    <li>Responde las siguientes preguntas en relación con la vacante elegida:</li>
+                    <p>¿Por qué elegí este rol?</p>
+                    <p>¿Qué requisitos cumplo actualmente?</p>
+                    <p>¿Qué requisitos me hacen falta?</p>
+                    <p>¿Qué plan de acción puedo tomar para estar preparado en 3-6 meses?</p>
+                    <p><i>(Opcional pero recomendable)</i> ¿Qué valor agregado puedo aportar al rol con mis fortalezas personales o experiencia previa?</p>
+                    <p></p>
+                    <br>
+                    <p><strong>3.Prepara tu aplicación para ese puesto</strong></p>
+                    <li>CV: Adapta tu CV real para que responda específicamente a los requisitos de la vacante. Incluye logros relevantes, experiencias aplicables y palabras clave que coincidan con la descripción del puesto.</li>
+                    <li>LinkedIn: Actualiza tu perfil profesional para reflejar tu interés y preparación hacia ese puesto.</li>
+                    <br>
+                    <p><i>Side note sobre LinkedIn:</i></p>
+                    <br>
+                    <p><i>En Sioltalife sabemos del poder que tiene un perfil de LinkedIn y que se trata de un perfil público, por lo que no necesariamente debe adaptarse a la investigación clínica si este no es el interés del alumno. Sin embargo, se deberán considerar los aspectos básicos de optimización:</i></p>
+                    <li>Actualización de foto profesional y portada</li>
+                    <li>Completar todas las secciones del perfil (resumen, experiencias, educación, habilidades, etc.)</li>
+                    <li>Palabras clave relevantes para visibilidad y networking (de acuerdo a lo que TU estás buscando <i>-Ya sea dentro del campo de la investigación clínica o no-</i></li>
+                    <li>Mantener coherencia entre CV y LinkedIn (en cuanto a tu experiencia, habilidades, etc)</li>
+                        <br>                                      
                     
+                    <p><strong>Enregables</strong></p>
+                    <p> Un documento con:</p>
+                    <li>Detalles de la vacante elegida (link, descripción o PDF)</li>
+                    <li>Respuestas a las preguntas de introspección</li>
+                    <li>Tu <strong>CV adaptado</strong> a la vacante elegida</li>
+                    <li>Tu <strong>perfil de LinkedIn actualizado</strong></li>
+                    <br>
+                     <p><strong>Modo de entrega</strong></p>
+                    <li>Enviar el documento de la vacante y tu CV a: cmayorquin@sioltalife.com</li>
+                    <li>Dejar un mensaje en el grupo de WhatsApp cuando tu perfil esté listo, para revisión y retroalimentación</li>
+<br>
+                </div>
+                <a href="https://1drv.ms/b/c/e7d0dde89d5474ab/ESiXCyLUbXRHtfbWIwAyw9EBCaOxsWGD3N8uYd9R5Nvcfw?e=RbDZAz" target="_blank" rel="noopener noreferrer" class="link-btn">Accede a la descrición de la actividad complementaria <i class="fas fa-pencil"></i></a>
+                    </div>
+
+                <!-- Material de Soporte -->
+                    <div class="link-card">
+                        <div class="link-number"> </div>
+                        <h3 class="link-title">Material de Soporte - Directorio</h3>
+                        <p class="link-desc">En el siguiente enlace encontrarás un Directorio de CROs, Farmaceúticas y Sitios de Investigación con presencia en México. </p>
+                        <a href="https://1drv.ms/b/c/e7d0dde89d5474ab/EQbj8Z3oabdIrZ_rvjOtfE8BjvkUdc76e8mSWxwKdNfb2A?e=5KrCRX" target="_blank" rel="noopener noreferrer" class="link-btn">Accede al directorio <i class="fas fa-book-open"></i></a>
+                    </div>
+                     
+
+                
+</div>
+
+
                     
                 </div>
             </section>
@@ -471,7 +696,7 @@
             <!-- Navegación entre módulos -->
             <div class="module-nav">
                 <a href="mod-5.html" class="nav-btn"><i class="fas fa-arrow-left"></i> Módulo Anterior</a>
-                <a href="index.html" class="nav-btn"> Inicio<i class="fas fa-home"></i></a>
+                <a href="index.html" class="nav-btn"> Inicio   <i class="fas fa-home"></i></a>
             </div>
         </div>
     </main>
@@ -502,7 +727,7 @@
                 <div class="footer-col">
                     <h3>Recursos</h3>
                     <ul>
-                       <li><a href="calendar.html"><i class="fas fa-chevron-right"></i> Calendario de Sesiones</a></li>
+                        <li><a href="calendar.html"><i class="fas fa-chevron-right"></i> Calendario de Sesiones</a></li>
                         <li><a href="glossary.html"><i class="fas fa-chevron-right"></i> Glosario </a></li>
                         <li><a href="support.html#foro"><i class="fas fa-chevron-right"></i> Foro de Discusión</a></li>
                         <li><a href="support.html#faqs"><i class="fas fa-chevron-right"></i> Preguntas Frecuentes</a></li>
@@ -523,5 +748,25 @@
             </div>
         </div>
     </footer>
+
+<script>
+  function toggleDropdown(id) {
+    const section = document.getElementById(id);
+    const isVisible = section.style.display === 'flex';
+    section.style.display = isVisible ? 'none' : 'flex';
+  }
+</script>
+                    
+                </div>             
+                </div>
+
+                
+
+                
+</div>
+                 
+              
+
+
 </body>
 </html>
